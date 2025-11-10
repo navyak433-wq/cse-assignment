@@ -26,4 +26,4 @@ echo "Values: $PARAM1 and $PARAM2" > output.txt
 echo "File created successfully!"
 cat output.txt
 
-echo "✅ Script executed successfully!"
+echo "script executed"!"
