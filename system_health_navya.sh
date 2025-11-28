@@ -114,6 +114,7 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     main_menu
     echo
   done
+else
 fi
 
 ===
