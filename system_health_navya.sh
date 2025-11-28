@@ -94,27 +94,10 @@ main_menu() {
   echo "2) View Processes"
   echo "3) Demo User Creation"
   echo "4) Organize Files"
-  echo "5) Network Check"
-  echo "6) Exit"
-  echo "=============================="
-  read -rp "Enter choice (1-6): " choice
-  case "$choice" in
-    1) create_report ;;
-    2) read -rp "Keyword (optional): " kw; show_processes "$kw" ;;
+  echo "rd (optional): " kw; show_processes "$kw" ;;
     3) read -rp "Enter username: " usr; demo_user_creation "$usr" ;;
     4) read -rp "Enter directory path: " dir; organize_files "$dir" ;;
     5) check_network ;;
     6) success "Exiting..."; exit 0 ;;
     *) note "Invalid choice." ;;
-  esac
-}
-
-if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
-  while true; do
-    main_menu
-    echo
-  done
-else
-fi
-
-===
+  
