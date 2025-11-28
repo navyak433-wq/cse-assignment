@@ -28,7 +28,7 @@ create_report() {
     df -h
     echo
     echo "-- Memory Usage --"
-    free -h
+    free
     echo
     echo "-- CPU Information --"
     if command -v lscpu >/dev/null 2>&1; then
